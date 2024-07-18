@@ -12,6 +12,8 @@
     "isolatedModules": true,
     "jsx": "preserve",
     "incremental": true,
+    "typeRoots": ["node_modules/@types"],
+    "types": ["node","next", "react", "react-dom","lucide-react","prisma/client"],
     "plugins": [
       {
         "name": "next"
@@ -21,6 +23,6 @@
       "@/*": ["./src/*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts","prisma/**/*.ts","factories/**/*.ts"],
   "exclude": ["node_modules"]
 }
